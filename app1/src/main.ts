@@ -2,7 +2,7 @@ import { SipraModule } from './app/sipra.module';
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './app/app.module';
+import { AppModule } from './app/app.module'; // rootModule 
 import { environment } from './environments/environment';
 
 if (environment.production) {
