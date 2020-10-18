@@ -1,6 +1,12 @@
 <p>mdf works!</p>
 
 <form [formGroup]="userForm">
+  <label for="fname">First Name : </label>
   <input type="text" name="fname" formControlName="fname" />
-  <button (click)="addUser()">Add User</button>
+   <br>
+   <label for="lname">Last Name :</label>
+   <input type="text" name="lanme" formControlName="lname"> <br>
+   <label for="email">Email :</label>
+   <input type="text" name="email" formControlName="email">
+  <button (click)="addUser()" [disabled]="userForm.invalid">Add User</button>
 </form>

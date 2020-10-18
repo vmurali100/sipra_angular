@@ -14,5 +14,6 @@ export class TdfComponent implements OnInit {
   }
   addUser(userForm:NgForm){
     console.log(userForm.value)
+    console.log("Is this Form IS Valid ? :",userForm.valid)
   }
 }
